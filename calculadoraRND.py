@@ -1,8 +1,3 @@
-#1 Criar if para entrar em um "modulo" da calculadora
-#2 Criar os modulos da calcoladora (mais, menos, divisao etc..)
-#3 Encrementar a calculadora
-
-
 import math
 import os
 
