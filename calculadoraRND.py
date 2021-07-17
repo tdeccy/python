@@ -1,5 +1,4 @@
-# coding: latin-1
-# ç substituido por "c"
+# -*- coding: utf-8 -*-
 import math
 import os
 
@@ -9,14 +8,9 @@ if os.name == 'nt':
 else:
     os.system('clear')
 
-print('Bem vindo, por favor, digite o numero correspondente de cada modo para das inicio\n')
-print('Soma - 1')
-print("Subtracao - 2")
-print('Divisao - 3')
-print('Raiz quadrada - 4')
-print('Sucessor e Antecessor - 5')
-print('Multiplicacao - 6')
-escUser = raw_input('\nDigite um numero correspondente do modulo: ')
+print('Bem vindo, por favor, digite o numero correspondente de cada modo para dar inicio\n')
+print('Soma -------------------- 1\nSubtraçao --------------- 2\nDivisao ----------------- 3\nRaiz quadrada ----------- 4\nSucessor e Antecessor --- 5\nMultiplicaçao ----------- 6')
+escUser = input('\nDigite um numero correspondente do modulo: ')
 
 if os.name == 'nt':
     os.system('cls')
@@ -30,15 +24,15 @@ if escUser == '1':
     n1 = int(input('Digite o primeiro numero da soma: '))
     n2 = int(input('Digite o segundo numero da soma: '))
     soma = n1 + n2
-    print('{} + {} = {}').format(n1,n2,soma)
+    print('{} + {} = {}'.format(n1,n2,soma))
 
-#subtracao
+#subtraçao
 if escUser == '2':
-    print('Voce entro no modo subtracao\n')
+    print('Voce entro no modo subtraçao\n')
     n1 = int(input('Digite o primeiro numero: '))
     n2 = int(input('Digite o segundo numero: '))
     sub = n1 - n2
-    print('{} - {} = {}').format(n1,n2,sub)
+    print('{} - {} = {}'.format(n1,n2,sub))
 
 #divisao
 if escUser == '3':
@@ -46,14 +40,14 @@ if escUser == '3':
     n1 = int(input('Digite o primeiro numero: '))
     n2 = int(input('Digite o segundo numero: '))
     divisao = n1 / n2
-    print('{} / {} = {}').format(n1,n2,divisao)
+    print('{} / {} = {}'.format(n1,n2,divisao))
 
 #raiz quadrada
 if escUser == '4':
     print('Voce entrou no modo raiz\n')
     n1 = int(input('Digite o numero para saber sua raiz: '))
     raiz = math.sqrt(n1)
-    print('A raiz de {} eh: {}').format(n1,raiz)
+    print('A raiz de {} é: {}'.format(n1,raiz))
 
 #Sucessor e Antecessor
 if escUser == '5':
@@ -61,12 +55,12 @@ if escUser == '5':
     n1 = int(input('Digite o numero que voce gostaria de saber o Sucessor e Antecessor: '))
     sucss = n1 + 1
     antcss = n1 - 1
-    print('\nO sucessor de {} eh: {}\nE o antecessor eh {}').format(n1,sucss,antcss)
+    print('\nO sucessor de {} é: {}\nE o antecessor é {}'.format(n1,sucss,antcss))
 
-#Multiplicacao
+#Multiplicaçao
 if escUser == '6':
-    print('Voce entrou no modo de Multiplicacao\n')
+    print('Voce entrou no modo de Multiplicaçao\n')
     n1 = int(input('Digite o primeiro numero: '))
     n2 = int(input('Digite o segundo numero: '))
     mult = n1 * n2
-    print('{} * {} = {}').format(n1,n2,mult)
+    print('{} * {} = {}'.format(n1,n2,mult))
